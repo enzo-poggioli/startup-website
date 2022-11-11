@@ -1,0 +1,180 @@
+/* GENERAL */
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+:root{
+    --color-main: #5B5BAE;
+    --color-main-darker: #212140;
+    --color-second: #c4c5e4;
+    --color-third: #c9d2d7;
+}
+
+html{
+    background-color: var(--color-third);
+}
+
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+
+/* SPECIFIC */
+
+    #hero{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        /*background-color: #0093E9;*/
+        justify-content: space-between;
+        overflow: hidden;
+        background-image: url("../images/gradienta-tHtZo3FLhPc-unsplash.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+    }
+
+        #hero #box{
+            width: 65%;
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            justify-content: center;
+            mix-blend-mode: difference;
+        }
+
+            #sub-box
+            {
+                border-top: 2px solid var(--color-main);
+                margin-top: 1em;
+                padding-top: 1em;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+                #hero #sub-box p{
+                    color: var(--color-main);
+                }
+
+#section{
+    width: 65%;
+    margin: 0px auto;
+    padding-top: 2em;
+}
+
+#section p {
+    opacity: 0.5;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    line-height: 2em;
+    text-align: justify;
+}
+
+#list-inline-buttons{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin: 1em;
+    font-size: 2em;
+    opacity: 0.8;
+    padding: 0.65em;
+    color: var(--color-main);
+    border: 2px solid var(--color-main);
+    border-radius : 0px 0px 0px 15px;
+    transition-duration: 0.2s;
+}
+
+#list-inline-buttons:hover{
+    background-color: var(--color-main);
+    color: var(--color-third);
+}
+
+#footer{
+    height: 15em;
+    background-color: #c0cacf;
+    margin: 0px auto;
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-link{
+    color: var(--color-main);
+    margin-right: 2em;
+    cursor: pointer;
+}
+
+.nav-link:hover{
+    text-decoration: underline;
+}
+
+#wave-wrapper{
+    width: 100%;
+    position: absolute;
+    bottom: -20px;
+}
+
+/* ============================ MISC ========================== */
+
+.title{
+    font-family: 'Epilogue', sans-serif;
+    text-transform: lowercase;
+}
+
+    .title-big{
+        font-size: 3em;
+    }
+
+    .title-green{
+        color: var(--color-main);
+    }
+
+.button{
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    border-radius: 0px 0px 0px 15px;
+    text-transform: lowercase;
+    font-family: 'Epilogue';
+    transition-duration: 0.2s;
+    font-weight: 600;
+}
+
+    .button-blue{
+        border: 2px solid var(--color-main);
+        color: var(--color-main);
+        cursor: pointer;
+    }
+
+    .button-blue:hover{
+        background-color: var(--color-main);
+        color: var(--color-main-darker);
+        opacity: 1 !important;
+    }
+
+.img-framed{
+    height: 100%;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.textsmall{
+    font-size: 12px;
+}
